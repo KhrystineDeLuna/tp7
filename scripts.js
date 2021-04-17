@@ -62,12 +62,3 @@ function loadFileInto(fromFile, whereTo) {
 
 }
 
-window.onload = function() {
-	
-	loadFileInto("ingredients.html", "column1");
-	
-	loadFileInto("equipment.html", "column2");
-	
-	loadFileInto("directions.html", "column3");
-	
-};
