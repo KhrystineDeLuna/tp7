@@ -1,0 +1,166 @@
+/* base styling */
+
+body {
+  background-color: #FBEFFB;
+  background: url("https://images.unsplash.com/photo-1577003833619-76bbd7f82948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* styling - header, h1, nav */
+
+#recipeName {
+  margin-top: 0;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 3px #fff, 0 0 5px #c4c4ff;
+  text-align: center;
+}
+
+#recipeName.clicked {
+  color: #FBEFFB;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* styling nav */
+
+nav {
+  color: #fff;
+  font-weight: 900;
+  border-radius: .5vw;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  color: #5B077D;
+  margin: .5em;
+}
+
+nav li a {
+  display: block;
+  padding: 8px;
+  background-color: #fff;
+  opacity: .8;
+}
+
+nav a:hover {
+  background-color: #FBECF6;
+  font-style: italic;
+  text-shadow: 0 0 .75px #d91a96;
+}
+
+/* styling div */
+
+.full {
+  background-color: #fff;
+  float: left;
+  width: 95.5vw;
+  text-align: center;
+  overflow: hidden;
+  opacity: 8; 
+}
+
+div {
+  background-color: #fff;
+  float: left;
+}
+
+li {
+  font-family: Georgia;
+}
+
+h4 {
+  font-family: 'Seymour One', sans-serif;
+  padding: .25em;
+  margin-left: .25em;
+  text-align: center;
+}
+
+#column1 {
+  background-color: #fff;
+  opacity: .8;
+  height: 4vh;
+  width: 25%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#column2 {
+  background-color: #fff;
+  opacity: .8;
+  height: 4vh;
+  width: 25%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#column3 {
+  background-color: #fff;
+  opacity: .8;
+  height: 4vh;
+  width: 33%;
+  float: left;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#column1.clicked,
+#column2.clicked,
+#column3.clicked {
+  height: auto;
+}
+
+#enjoy {
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+footer {
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  padding-top: 7px;
+}
+
+/* collapse 3 to 1 col at 700px  */
+
+@media screen and (max-width: 700px) {
+  div {
+    width: 100%;
+  }
+  nav {
+    font-size: .85em;
+    padding-top: .45em;
+  }
+}
+
+/* removes nav, alters div col styling, positions footer at very small screen sizes  */
+
+@media screen and (max-width: 575px) {
+  nav {
+    display: none;
+  }
+  div {
+    border: solid .1em;
+    border-radius: .35em;
+  }
+}
