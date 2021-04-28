@@ -2,65 +2,61 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags and title -->
   <meta charset="UTF-8">
-  <meta name="description" content="Righteous Raspberry Brownies Recipe">
-  <meta name="keywords" content="#">
-  <meta name="author" content="Khrystine Raymond">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- external and internal CSS -->
+  <link rel="stylesheet" href="styles.css" media="all">
+  <style>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  </style>
 
-  <script src="scripts.js" defer></script>
-  <script>
-    // in-page JavaScript here
-  </script>
+ <script src="scripts.js" defer></script> 
+  <script> // in-page JavaScript here  </script>
 
-  <title> Tiny Project 7 - Multiple Recipes </title>
+  <title> Tiny Project 7 - AJAX Recipes </title>
 </head>
-
-
+  
+  
 <body>
 
-
-  <header>
-    <h1 id="recipeName">Righteous Raspberry Brownies</h1> 
-    <h3 id="contribution"> Contributed by Khrystine</h3>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#">Recipe 1</a></li>
-      <li><a href="#">Recipe 2</a></li>
-      <li><a href="#">Recipe 3</a></li>
-    </ul>
-  </nav>
-
-
-  <div id="column1">
-
+  <div id="nav">
+    <a href="#" onclick="RighteousRaspberryBrownies.displayRecipe();">Righteous Raspberry Brownies</a>
+    <a href="#" onclick="LemonChickenPicatta.displayRecipe();">Lemon Chicken Picatta</a>
+    <a href="#" onclick="SoftPretzels.displayRecipe();">Soft Pretzels</a>
   </div>
 
-  <div id="column2">
-
+  <div id="titleBanner">
+    <h1 id="title"></h1>
+    <h3></h3>
   </div>
 
-  <div id="column3">
+	<div id="recipeColumns">
 
-  </div>
+		<div id="ingredients">
+		</div>
+		<!-- /#ingredients -->
 
-  <div id="enjoy" class="full">
+		<div id="equipment">
+		</div>
+		<!-- /#equipment -->
+
+		<div id="directions">
+		</div>
+		<!-- /#directions -->
+
+	</div>
+	<!-- /#recipeColumns -->
   
-  </div>
+  <div id="footer">  
+    <!-- could I also use the AJAX function that is pulling the recipe info to change the footer display so each recipe has the link to original in the footer? --> 
+		<p><a href="https://www.allrecipes.com/recipe/228273/righteous-raspberry-brownies/">Original recipe at AllRecipes.com</a><br> Created by Khrystine Raymond for DTC 477 @ Washington State University | Spring 2021</p> 
+	</div>
 
-  <div class="full">
-      <footer>
-        <ul>
-          <li><a href="https://www.allrecipes.com/recipe/228273/righteous-raspberry-brownies/">Original recipe at AllRecipes.com</a></li>
-          <p>Created by Khrystine Raymond for DTC 477 @ Washington State University © 2021</p>
-        </ul>
+</body>
 
-      </footer>
-  </div>
+</html>
+
